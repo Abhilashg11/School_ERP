@@ -1,6 +1,7 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-    productionBrowserSourceMaps: false,
+  productionBrowserSourceMaps: false,
+  devIndicators: false,
 };
 
 export default nextConfig;
