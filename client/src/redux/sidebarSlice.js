@@ -1,7 +1,7 @@
 import { createSlice } from "@reduxjs/toolkit";
 
 const initialState = {
-  open: true, // Default open on desktop
+  open: false, // Default open on desktop
 };
 
 export const sidebarSlice = createSlice({

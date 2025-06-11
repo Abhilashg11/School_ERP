@@ -12,7 +12,7 @@ export default function Layout({ children }) {
       {/* Main area: Sidebar + Content */}
       <div className="flex flex-1 overflow-hidden">
         {/* Sidebar (left) */}
-        <aside className="hidden md:block w-64 bg-gray-200 p-4 overflow-auto">
+        <aside className="hidden md:block w-64 bg-gray-200 overflow-auto">
           <Sidebar />
         </aside>
 
