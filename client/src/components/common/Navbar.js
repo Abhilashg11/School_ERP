@@ -1,7 +1,7 @@
 "use client";
 import React, { useState } from "react";
 import { useDispatch } from "react-redux";
-import { toggleSidebar } from "../../redux/sidebarSlice";
+import { toggleSidebar } from "@/features/sidebar/sidebarSlice";
 import MenuIcon from "@mui/icons-material/Menu";
 import AdbIcon from "@mui/icons-material/Adb";
 import { IconButton, Avatar, Menu, MenuItem, Tooltip } from "@mui/material";
@@ -23,7 +23,7 @@ function Navbar() {
 
   return (
     <nav className="bg-blue-600 w-full">
-      <div className="max-w-[100vw] mx-4 px-4 sm:px-6 lg:px-8">
+      <div className="max-w-[100vw] px-2 sm:px-4 lg:px-6">
         <div className="relative flex items-center justify-between h-16">
           {/* Left: Mobile menu button */}
           <div className="flex md:hidden">
@@ -45,7 +45,7 @@ function Navbar() {
             </span>
 
             {/* Desktop Nav links */}
-            <div className="hidden md:flex space-x-4 ml-6">
+            <div className="hidden md:flex ml-4">
               {pages.map((page) => (
                 <button
                   key={page}

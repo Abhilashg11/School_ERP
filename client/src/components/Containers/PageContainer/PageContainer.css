@@ -1,0 +1,19 @@
+.main-Pagecontainer {
+    background-color: white;
+    width:100%;
+    border-radius: 8px;
+    /* box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); */
+    margin:auto;
+    max-width: 100%;
+    border: 1px solid hsl(262, 84%, 87%);
+ 
+}
+
+.Header-text{
+    background-color: #D8C4FA;
+    padding-left: 3px;
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
+    font-weight: 600px;
+    font-family: roboto;
+}

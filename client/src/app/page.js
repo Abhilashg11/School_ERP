@@ -1,9 +1,8 @@
 import React from "react";
-import AdminLayout from "@/components/layouts/AdminLayout";
 export default function Home() {
   return (
     <div>
-      <AdminLayout />
+      <h1>Home</h1>
     </div>
   );
 }
