@@ -4,6 +4,7 @@ import { useDispatch, useSelector } from "react-redux";
 import { closeSidebar } from "../../redux/sidebarSlice";
 import InboxIcon from "@mui/icons-material/MoveToInbox";
 import MailIcon from "@mui/icons-material/Mail";
+import "./Common.scss";
 
 export default function Sidebar() {
   const open = useSelector((state) => state.sidebar.open);
@@ -32,7 +33,7 @@ export default function Sidebar() {
       {/* Overlay on mobile */}
       {open && (
         <div
-          className="fixed inset-0 z-40 bg-black bg-opacity-50 md:hidden"
+          className="fixed inset-0 z-40 bg-gray-200/50 md:hidden"
           onClick={() => dispatch(closeSidebar())}
         />
       )}
@@ -40,12 +41,15 @@ export default function Sidebar() {
       {/* Sidebar */}
       <div
         className={`
-         fixed top-0 left-0 h-full w-64 bg-white z-50 shadow-lg transform transition-transform duration-300 ease-in-out
-        ${open ? "translate-x-0" : "-translate-x-full"}
-        md:translate-x-0 md:static md:block
+    w-64 h-full bg-white shadow-lg z-50
+    fixed top-0 left-0 
+    transform transition-transform  ease-in-out
+    ${open ? "translate-x-0 duration-300" : "-translate-x-full duration-10"}
+
+    md:static md:translate-x-0 md:transform-none md:transition-none md:block
   `}
       >
-        <div className="h-full max-h-screen overflow-y-auto py-4 custom-scroll">
+        <div className="h-full max-h-screen overflow-y-auto py-4 scroll-hidden">
           {/* Top List */}
           <ul>
             {itemsTop.map((text, index) => (
