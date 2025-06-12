@@ -22,7 +22,7 @@ function Navbar() {
   };
 
   return (
-    <nav className="bg-blue-600 w-full">
+    <nav className="bg-[#7C3AED] w-full">
       <div className="max-w-[100vw] px-2 sm:px-4 lg:px-6">
         <div className="relative flex items-center justify-between h-16">
           {/* Left: Mobile menu button */}

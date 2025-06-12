@@ -22,7 +22,7 @@ export default function Sidebar() {
   const itemsBottom = [
     { item: "Home", link: "/" },
     { item: "Form", link: "/form" },
-    { item: "Send email", link: "/email" },
+    { item: "Details", link: "/detailpage" },
     { item: "Drafts", link: "/draft" },
     { item: "Products", link: "/products" },
     { item: "UMS", link: "/ums" },

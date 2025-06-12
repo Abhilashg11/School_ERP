@@ -27,7 +27,7 @@ export default function RootLayout({ children }) {
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
         <ClientProvider>
-          <div className="flex flex-col min-h-screen bg-amber-100">
+          <div className="flex flex-col min-h-screen bg-white">
             <header className="h-auto bg-gray-800 text-white flex items-center">
               <Navbar />
             </header>
