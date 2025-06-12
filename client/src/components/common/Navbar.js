@@ -1,7 +1,7 @@
 "use client";
 import React, { useState } from "react";
 import { useDispatch } from "react-redux";
-import { toggleSidebar } from "../../redux/sidebarSlice";
+import { toggleSidebar } from "@/features/sidebar/sidebarSlice";
 import MenuIcon from "@mui/icons-material/Menu";
 import AdbIcon from "@mui/icons-material/Adb";
 import { IconButton, Avatar, Menu, MenuItem, Tooltip } from "@mui/material";
